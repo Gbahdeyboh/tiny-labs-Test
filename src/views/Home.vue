@@ -1,7 +1,7 @@
 <template>
-	<div class="container-fluid home bg-primary">
+	<div class="container-fluid home">
 		<div class="row fullHeight">
-			<div class="col-12 col-md-5 bg-info fullHeight hide-on-small" id="imageSection"></div>
+			<div class="col-12 col-md-5 fullHeight hide-on-small" id="imageSection"></div>
 			<div class="col-12 col-md-5 fullHeight hide-on-small" id="imageSectionOverlay"></div>
 			<div class="col-12 col-md-5 fullHeight hide-on-small" id="imageSectionContent">
 				<div id="imageTextSection">
@@ -28,16 +28,53 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-7 bg-danger fullHeight" id="rightSide">
-				<div class="bg-primary" id="mainBody">Helllo</div>
+			<div class="col-12 col-md-7 fullHeight" id="rightSide">
+				<div class="d-flex justify-content-center" id="mainBody">
+					<div class="pt-5" id="createAccountBody">
+						<div id="createAccountText">Create your free account</div>
+						<div class="d-flex pt-2" id="registrationText">
+							<div class="pr-2">Already registered?</div>
+							<div class="" id="signin">Sign in</div>
+						</div>
+						<!-- create account form -->
+						<div class="shadow mt-4 pb-5" id="createAccountFormBody">
+							<div class="row m-0 pt-4">
+								<div class="col-12 col-md-6 m-0">
+									<InputText type="text" class="m-0" text="First Name"/>
+								</div>
+								<div class="col-12 col-md-6 m-0">
+									<InputText type="text" class="m-0" text="Last Name"/>
+								</div>
+							</div>
+							<div class="row m-0 pl-3 pr-3 pt-2">
+								<InputText type="email" class="m-0" text="Email"/>
+							</div>
+							<div class="row m-0 pl-3 pr-3  pt-2">
+								<InputText type="password" class="m-0" text="Password"/>
+							</div>
+							<div class="row m-0 d-flex justify-content-end">
+								<div class="pr-3 mt-4" id="submitButton">
+									<InputButton />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<!-- The footer -->
-				<div class="bg-info" id="footer"></div>
+				<div class="row" id="footer">
+					<div class="col-12 col-md-8 d-flex justify-content-center align-items-center footerText">
+						By signing up, you agree to our <span> Terms </span> and <span> Privacy Policy </span>
+					</div>
+					<div class="col-12 col-md-4 footerText d-flex justify-content-center align-items-center">
+						&copy;2019 Tinylabs. All rights reserved
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </template>
 
-<style type="text/css">
+<style type="text/css" scoped>
 	.home{
 		height: 100%;
 	}
@@ -92,18 +129,102 @@
 	}
 
 	#mainBody{
-		min-height: calc(100% - 70px);
+		min-height: calc(100% - 60px);
 	}
 
 	#footer{
-		height: 70px;
+		height: 60px;
+	}
+
+	#createAccountBody{
+		min-height: 400px;
+		width: 70%;
+	}
+
+	#createAccountText{
+		font-size: 34px;
+		font-weight: 500;
+		color: var(--pageBlue);
+	}
+
+	#registrationText{
+		font-size: 18px;
+	}
+
+	#signin{
+		color: var(--pageGreen);
+		cursor: pointer;
+		transition: .4s linear;
+	}
+
+	#signin:hover{
+		opacity: 0.4;
+	}
+
+	#createAccountFormBody{
+		background: white;
+		border-radius: 5px;
+		width: 100%;
+		min-height: 200px;
+	}
+
+	.footerText{
+		font-size: 13px;
+		color: #6A7E8A;
+		font-weight: normal;
+	}
+
+	.footerText > span {
+		color: var(--pageGreen);
+		padding-left: .3rem;
+		padding-right: .3rem;
+		cursor: pointer;
+		transition: .4s linear;
+	}
+
+	.footerText > span:hover{
+		opacity: 0.4;
+	}
+
+	#submitButton{
+		height: 44px;
+		width: 200px;
+	}
+
+
+
+	/* Small devices with 600px width and below */
+
+	@media only screen and (max-width: 600px){
+		#createAccountBody{
+			min-height: 400px;
+			width: 95%;
+		}
+
+		#createAccountText{
+			font-size: 20px;
+			text-align: center;
+		}
+
+		#registrationText{
+			font-size: 16px;
+			display: flex !important;
+			justify-content: center;
+			color: var(--pageBlue);
+		}
 	}
 </style>
 
 <script>
 // @ is an alias to /src
+import InputText from '@/components/inputText.vue';
+import InputButton from '@/components/inputButton.vue';
 
 export default {
 	name: "Home",
+	components: {
+		InputText,
+		InputButton
+	}
 };
 </script>

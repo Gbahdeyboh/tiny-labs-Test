@@ -8,6 +8,7 @@
 #app{
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    background: #E5E5E5;
 }
 </style>
 
