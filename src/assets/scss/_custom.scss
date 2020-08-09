@@ -1,0 +1,18 @@
+/* Styling for different ways of aligning and displaying items on several pages page */
+
+.fullHeight {
+    height: 100%;
+}
+.fullWidth{
+    width: 100%;
+}
+
+.halfHeight {
+    height: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .hide-on-small{
+        display: none !important;
+    }
+}
