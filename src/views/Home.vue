@@ -54,7 +54,7 @@
 							</div>
 							<div class="row m-0 d-flex justify-content-end">
 								<div class="pr-3 mt-4" id="submitButton">
-									<InputButton />
+									<InputButton text="Continue"/>
 								</div>
 							</div>
 						</div>
@@ -62,10 +62,10 @@
 				</div>
 				<!-- The footer -->
 				<div class="row" id="footer">
-					<div class="col-12 col-md-8 d-flex justify-content-center align-items-center footerText">
+					<div class="col-12 col-md-8 d-flex justify-content-center align-items-center footerText halfHeight">
 						By signing up, you agree to our <span> Terms </span> and <span> Privacy Policy </span>
 					</div>
-					<div class="col-12 col-md-4 footerText d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-4 footerText d-flex justify-content-center align-items-center halfHeight">
 						&copy;2019 Tinylabs. All rights reserved
 					</div>
 				</div>
@@ -176,8 +176,8 @@
 
 	.footerText > span {
 		color: var(--pageGreen);
-		padding-left: .3rem;
-		padding-right: .3rem;
+		padding-left: .2rem;
+		padding-right: .2rem;
 		cursor: pointer;
 		transition: .4s linear;
 	}
@@ -199,6 +199,7 @@
 		#createAccountBody{
 			min-height: 400px;
 			width: 95%;
+			margin-bottom: 1em;
 		}
 
 		#createAccountText{
@@ -211,6 +212,11 @@
 			display: flex !important;
 			justify-content: center;
 			color: var(--pageBlue);
+		}
+
+		#footer{
+			height: 60px;
+			background: #f6f8f8;
 		}
 	}
 </style>

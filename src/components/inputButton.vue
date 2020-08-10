@@ -1,5 +1,5 @@
 <template>
-	<div class="d-flex justify-content-center align-items-center shadow" id="button">Button</div>
+	<div class="d-flex justify-content-center align-items-center shadow" id="button">{{ text }}</div>
 </template>
 
 <style type="text/css" scoped>
@@ -24,6 +24,12 @@
 <script type="text/javascript">
 	export default {
 		name: 'InputButton',
+		props: {
+			text: {
+				type: String,
+				required: true
+			}
+		},
 		data(){
 			return {}
 		}

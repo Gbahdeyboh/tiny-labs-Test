@@ -41,7 +41,73 @@
 				</div>
 			</div>
 			<div class="fullHeight p-3 p-md-5" id="mainBody">
-				<!-- <div class="row bg-primary"></div> -->
+				<!-- First Header -->
+				<div class="row" id="mainBodyFirstHeader">
+					<div class="col-6 d-flex align-items-center" id="employeesText">Employees</div>
+					<div class="col-6 d-flex align-items-center justify-content-end">
+						<div class="addNewButton">
+							<InputButton text="Add New"/>
+						</div>
+					</div>
+				</div>
+				<!-- Second Header -->
+				<div class="row bg-white" id="mainBodySecondHeader">
+					<div class="col-6 col-md-7 d-flex align-items-center pl-3" id="secondHeaderText">Josh Bakery Ventures</div>
+					<div class="col-6 col-md-5 d-flex align-items-center" id="secondHeaderAddress">62, Bode Thomas, Surulere, Lagos</div>
+				</div>
+				<!-- Third header -->
+				<div class="row mt-3 mt-mb-0" id="mainBodyThirdHeader">
+					<div class="col-12 col-md-3">
+						<div class="row fullHeight">
+							<div class="col-6 d-flex justify-content-center align-items-center">
+								<div class="row" id="changeRoleBtn">
+									<div class="col-9 d-flex justify-content-center align-items-center">Change role</div>
+									<div class="col-2 pt-2">
+										<svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 5L5 1L1 5" stroke="#6A7E8A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M1 9L5 13L9 9" stroke="#6A7E8A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 d-flex justify-content-center align-items-center">
+								<div class="" id="changeBtn">
+									<InputButton style="font-size: 14px" text="Change"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-9">
+						<div class="row fullHeight">
+							<div class="col-8 d-flex pl-0 align-items-center">
+								<input type="text" placeholder="Enter staff name here..." id="staffInputText" name="">
+								<span id="staffSearchIcon">
+									<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.05556 11.6555C8.84766 11.6555 11.1111 9.3921 11.1111 6.59999C11.1111 3.80788 8.84766 1.54443 6.05556 1.54443C3.26345 1.54443 1 3.80788 1 6.59999C1 9.3921 3.26345 11.6555 6.05556 11.6555Z" stroke="#6A7E8A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M14.2611 15.1167L9.55555 10.3333" stroke="#6A7E8A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</div>
+							<div class="col-4 m-0 p-0 d-flex justify-content-end">
+								<div class="staffNav d-flex">
+									<div class="pageNumber d-flex justify-content-center align-items-center">
+										<span id="activePageNumber">1</span>
+									</div>
+									<div class="pageNumber d-flex justify-content-center align-items-center">of</div>
+									<div class="pageNumber d-flex justify-content-center align-items-center">2</div>
+								</div>
+								<div class="staffNav d-flex justify-content-center">
+									<div class="d-flex justify-content-center align-items-center pr-1">
+										<span class="pageNavIcon">&lt;</span>
+									</div>
+									<div class="d-flex align-items-center justify-content-center pl-1">
+										<span class="pageNavIcon">&gt;</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -96,6 +162,117 @@
 		border-left: 6px solid var(--pageGreen);
 	}
 
+	#mainBodyFirstHeader{
+		height: 60px;
+		width: 100%;
+	}
+
+	#employeesText{
+		font-size: 26px;
+		font-weight: 500;
+	}
+
+	.addNewButton{
+		width: 200px;
+		height: 44px;
+	}
+
+	#mainBodySecondHeader{
+		height: 110px;
+	}
+
+	#secondHeaderText{
+		font-size: 36px;
+		color: var(--pageBlue);
+		font-weight: 500;
+	}
+
+	#secondHeaderAddress{
+		font-size: 22px;
+		font-weight: 400;
+		color: var(--pageBlue);
+	}
+
+	#mainBodyThirdHeader{
+		min-height: 50px;
+		width: 100%;
+	}
+
+	#changeRoleBtn{
+		width: 143px;
+		height: 35px;
+		background: white !important;
+		border-radius: 3px;
+		border: 1px solid rgba(106, 126, 138, 0.4);
+		color: #6A7E8A;
+		font-size: 14px;
+		cursor: pointer;
+	}
+
+	#changeBtn{
+		width: 118px;
+		height: 34px;
+	}
+
+	#staffInputText{
+		height: 34px;
+		width: 332px;
+		background: white;
+		border-radius: 3px;
+		border: 1px solid rgba(106, 126, 138, 0.4);
+		padding-left: .5rem;
+		font-size: 14px;
+		transition: .2s linear;
+	}
+
+	#staffInputText:focus{
+		border: 0px;
+		outline: 1px solid rgba(106, 126, 138, 1);
+	}
+
+	#staffSearchIcon{
+		position: relative;
+		right: 30px;
+	}
+
+	.staffNav{
+		width: 60px;
+	}
+
+	.pageNumber{
+		width: 33.3%;
+	}
+
+	#activePageNumber{
+		border-radius: 3px;
+		border: 1px solid rgba(1, 60, 97, 0.1);
+		width: 21px;
+		height: 21px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		background: white;
+		cursor: pointer;
+	}
+
+	.pageNavIcon{
+		width: 16px;
+		height: 16px;
+		border-radius: 50px;
+		background: var(--pageGreen);
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: .4s linear;
+	}
+
+	.pageNavIcon:hover{
+		opacity: 0.5;
+	}
+
 	@media only screen and (max-width: 600px){
 		#sideNav{
 			position: fixed !important;
@@ -115,10 +292,39 @@
 			padding: 0px !important;
 		}
 
+		#mainBody{
+			width: 100% !important;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
 		.iconBody.active{
 			border-left: 0px !important;
 			border-bottom: 6px solid var(--pageGreen) !important;
 			width: 200px;
 		}
+
+		#secondHeaderText{
+			font-size: 28px;
+		}
+
+		#secondHeaderAddress{
+			font-size: 18px;
+		}
+
+		#mainBodyThirdHeader > div {
+			height: 50px;
+		}
 	}
 </style>
+
+<script type="text/javascript">
+	import InputButton from '@/components/inputButton.vue';
+	export default {
+		name: 'Dashboard',
+		components: {
+			InputButton
+		}
+	}
+</script>
