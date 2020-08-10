@@ -54,7 +54,9 @@
 							</div>
 							<div class="row m-0 d-flex justify-content-end">
 								<div class="pr-3 mt-4" id="submitButton">
-									<InputButton text="Continue"/>
+									<router-link :to="{name: 'Dashboard'}">
+										<InputButton text="Continue"/>
+									</router-link>
 								</div>
 							</div>
 						</div>
@@ -77,6 +79,10 @@
 <style type="text/css" scoped>
 	.home{
 		height: 100%;
+	}
+
+	a{
+		text-decoration: none!important;
 	}
 
 	#imageSection{

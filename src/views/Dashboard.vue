@@ -56,7 +56,7 @@
 					<div class="col-6 col-md-5 d-flex align-items-center" id="secondHeaderAddress">62, Bode Thomas, Surulere, Lagos</div>
 				</div>
 				<!-- Third header -->
-				<div class="row mt-3 mt-mb-0" id="mainBodyThirdHeader">
+				<div class="row mt-3 mb-5 mb-md-0" id="mainBodyThirdHeader">
 					<div class="col-12 col-md-3">
 						<div class="row fullHeight">
 							<div class="col-6 d-flex justify-content-center align-items-center">
@@ -107,6 +107,150 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<!-- Data table -->
+				<div class="mt-3 fullWidth" id="dataTable">
+					<div class="dataTableRow header row">
+						<div class="col-1">
+							<label class="dataCheckBox">
+								<input type="checkbox" class="" name="">
+								<span></span>
+							</label>
+						</div>
+						<div class="col-2">FIRST NAME</div>
+						<div class="col-2">LAST NAME</div>
+						<div class="col-2">EMAIL</div>
+						<div class="col-2">PHONE</div>
+						<div class="col-2">ROLE</div>
+						<div class="col-1"></div>
+					</div>
+					<div class="dataTableRow text row">
+						<div class="col-1">
+							<label class="dataCheckBox">
+								<input type="checkbox" class="" name="">
+								<span></span>
+							</label>
+						</div>
+						<div class="col-2">Joshua</div>
+						<div class="col-2">Bakare</div>
+						<div class="col-2">josh.bakery@gmail.com</div>
+						<div class="col-2">+2348133482456</div>
+						<div class="col-2">Admin</div>
+						<div class="col-1">
+							<span>
+								<img src="@/assets/delete.svg" alt="Delete Icon here" />
+							</span>
+						</div>
+					</div>
+					<div class="dataTableRow text row">
+						<div class="col-1">
+							<label class="dataCheckBox">
+								<input type="checkbox" class="" name="">
+								<span></span>
+							</label>
+						</div>
+						<div class="col-2">Jane</div>
+						<div class="col-2">Clement</div>
+						<div class="col-2">josh.bakery@gmail.com</div>
+						<div class="col-2">+2348133482456</div>
+						<div class="col-2">Staff</div>
+						<div class="col-1">
+							<span>
+								<img src="@/assets/delete.svg" alt="Delete Icon here" />
+							</span>
+						</div>
+					</div>
+					<div class="dataTableRow text row">
+						<div class="col-1">
+							<label class="dataCheckBox">
+								<input type="checkbox" class="" name="">
+								<span></span>
+							</label>
+						</div>
+						<div class="col-2">Hannah</div>
+						<div class="col-2">Johnmson</div>
+						<div class="col-2">josh.bakery@gmail.com</div>
+						<div class="col-2">+2348133482456</div>
+						<div class="col-2">Staff</div>
+						<div class="col-1">
+							<span>
+								<img src="@/assets/delete.svg" alt="Delete Icon here" />
+							</span>
+						</div>
+					</div>
+					<div class="dataTableRow text row">
+						<div class="col-1">
+							<label class="dataCheckBox">
+								<input type="checkbox" class="" name="">
+								<span></span>
+							</label>
+						</div>
+						<div class="col-2">Joshua</div>
+						<div class="col-2">Bakare</div>
+						<div class="col-2">josh.bakery@gmail.com</div>
+						<div class="col-2">+2348133482456</div>
+						<div class="col-2">Admin</div>
+						<div class="col-1">
+							<span>
+								<img src="@/assets/delete.svg" alt="Delete Icon here" />
+							</span>
+						</div>
+					</div>
+					<div class="dataTableRow text row">
+						<div class="col-1">
+							<label class="dataCheckBox">
+								<input type="checkbox" class="" name="">
+								<span></span>
+							</label>
+						</div>
+						<div class="col-2">Joshua</div>
+						<div class="col-2">Bakare</div>
+						<div class="col-2">josh.bakery@gmail.com</div>
+						<div class="col-2">+2348133482456</div>
+						<div class="col-2">Admin</div>
+						<div class="col-1">
+							<span>
+								<img src="@/assets/delete.svg" alt="Delete Icon here" />
+							</span>
+						</div>
+					</div>
+					<div class="dataTableRow text row">
+						<div class="col-1">
+							<label class="dataCheckBox">
+								<input type="checkbox" class="" name="">
+								<span></span>
+							</label>
+						</div>
+						<div class="col-2">Jane</div>
+						<div class="col-2">Clement</div>
+						<div class="col-2">josh.bakery@gmail.com</div>
+						<div class="col-2">+2348133482456</div>
+						<div class="col-2">Staff</div>
+						<div class="col-1">
+							<span>
+								<img src="@/assets/delete.svg" alt="Delete Icon here" />
+							</span>
+						</div>
+					</div>
+					<div class="dataTableRow text row">
+						<div class="col-1">
+							<label class="dataCheckBox">
+								<input type="checkbox" class="" name="">
+								<span></span>
+							</label>
+						</div>
+						<div class="col-2">Hannah</div>
+						<div class="col-2">Johnmson</div>
+						<div class="col-2">josh.bakery@gmail.com</div>
+						<div class="col-2">+2348133482456</div>
+						<div class="col-2">Staff</div>
+						<div class="col-1">
+							<span>
+								<img src="@/assets/delete.svg" alt="Delete Icon here" />
+							</span>
+						</div>
+					</div>
+					<!-- Rows end here -->
 				</div>
 			</div>
 		</div>
@@ -179,6 +323,10 @@
 
 	#mainBodySecondHeader{
 		height: 110px;
+	}
+
+	#mainBody{
+		overflow-y: scroll;
 	}
 
 	#secondHeaderText{
@@ -273,6 +421,77 @@
 		opacity: 0.5;
 	}
 
+	#dataTable{
+		min-height: 400px;
+	}
+
+	#dataTable .dataTableRow{
+		height: 55px;
+	}
+
+	#dataTable .dataTableRow.header > div{
+		font-size: 14px;
+		font-weight: 500;
+		color: #013C61;
+	}
+
+	#dataTable .dataTableRow.text > div{
+		font-size: 16px;
+		font-weight: 400;
+		color: #6A7E8A;
+	}
+
+	#dataTable .dataTableRow > div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.dataCheckBox{
+		display: inline-flex;
+	    cursor: pointer;
+	    position: relative;
+	}
+
+	.dataCheckBox > input{
+		height: 13px;
+		width: 13px;
+		appearance: none;
+		border: 1.2px solid rgba(106, 126, 138, 0.4);
+		border-radius: 1px;
+		outline: none;
+	    transition-duration: 0.3s;
+	    background-color: white;
+	    cursor: pointer;
+	}
+
+	.dataCheckBox > input:checked{
+		border: 1px solid rgba(106, 126, 138, 0.4);
+	    background-color: white;
+	}
+
+	.dataCheckBox > input:checked + span::before {
+	    content: '\2713';
+	    display: block;
+	    text-align: center;
+	    color: var(--pageGreen);
+	    position: absolute;
+	    left: 0rem;
+	    top: -0.3rem;
+	}
+
+	.dataCheckBox > input:active {
+	    border: 2px solid #34495E;
+	}
+
+	#dataTable > div:nth-child(even){
+		background: white;
+	}
+
+	#dataTable > div:nth-child(odd){
+		background: none;
+	}
+
 	@media only screen and (max-width: 600px){
 		#sideNav{
 			position: fixed !important;
@@ -285,6 +504,7 @@
 			margin: 0px !important;
 			padding: 0px !important;
 			box-shadow: 0px -3px 2px -1px rgba(0, 0, 0, 0.05);
+			z-index: 2;
 		}
 
 		#sideNav > div {
@@ -315,6 +535,14 @@
 
 		#mainBodyThirdHeader > div {
 			height: 50px;
+		}
+
+		#dataTable{
+			overflow-x: scroll;
+		}
+
+		#dataTable .dataTableRow {
+			min-width: 300%;
 		}
 	}
 </style>

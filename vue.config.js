@@ -2,8 +2,8 @@ module.exports = {
   runtimeCompiler: true,
   pwa: {
     name: 'tinyLabs',
-    themeColor: '#3E4491',
-    msTileColor: '#3E4491',
+    themeColor: '#013C61',
+    msTileColor: '#2BDA53',
   },
   css: {
     loaderOptions: {
